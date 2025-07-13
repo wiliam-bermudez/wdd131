@@ -1,17 +1,18 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   #hamburger {
     display: none;
   }
 
   #navMenu {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: flex-end;
     background: none;
-    position: absolute;
+    position: relative;
   }
 
-  #navMenu a {
+  #navMenu a { 
+    color: white;
     margin-left: 2rem;
     padding: 0.5rem 0;
   }
