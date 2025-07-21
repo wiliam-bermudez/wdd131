@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Wiliam Bermudez" />
+  <meta name="description" content="The following page will show " />
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>MEXICO</h1>
+  </header>
+
+  <!-- Imagen hero: visible como imagen en móvil, como fondo en desktop -->
+  <picture class="hero">
+    <source srcset="images/MexicoLarge.webp" media="(min-width: 768px)" />
+    <source srcset="images/MexicoSmall.webp" media="(max-width: 767px)" />
+    <img src="images/MexicoLarge.webp" alt="Mexico" />
+  </picture>
+
+  <main>
+    <section class="data">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> Value</p>
+      <p><strong>Population:</strong> Value</p>
+      <p><strong>Capital:</strong> Value</p>
+      <p><strong>Lenguages:</strong> Value</p>
+      <p><strong>Currency:</strong> Value</p>
+      <p><strong>Time Zone:</strong> Value</p>
+      <p><strong>Calling Code:</strong> Value</p>
+      <p><strong>Internet TLD.:</strong> Value</p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/weather-icon.svg" alt="Weather Icon" class="mobile-icon" />
+      <p><strong>Temperature:</strong> <span id="temp">30</span>°F</p>
+      <p><strong>Conditions:</strong> Sunny</p>
+      <p><strong>Wind Speed:</strong> <span id="wind">10</span> mph</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 💥Wiliam Bermudez💥 - Mexico</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>

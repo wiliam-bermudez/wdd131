@@ -1,0 +1,115 @@
+:root {
+  --main-color: #e53935;
+  --bg-light: #fdfdfd;
+  --text-dark: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--text-dark);
+  padding: 1rem;
+}
+
+/* Header and Footer */
+header, footer {
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero image default (mobile - normal flow) */
+.hero {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections */
+section.data, section.weather {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+}
+
+.weather h2::after {
+  content: " ⛅";
+  margin-left: 0.5rem;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  section.data {
+    width: 30%;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  section.weather {
+    width: 30%;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+}
