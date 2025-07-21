@@ -24,7 +24,7 @@ body {
 footer {
   text-align: center;
   background-color: var(--main-color);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 1rem;
   width: 102.5%;
   margin-left: -1.25%;
@@ -33,7 +33,7 @@ footer {
 header{
   text-align: center;
   background-color: var(--main-color);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin-top: -1.25%;
   width: 102.5%;
   margin-left: -1.25%;
