@@ -3,23 +3,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const wind = parseFloat(document.getElementById("wind").textContent);
   const windchillSpan = document.getElementById("windchill");
 
-  function calculateWindChill(tempF, speedMph) {
-    return (
-      35.74 +
-      0.6215 * tempF -
-      35.75 * Math.pow(speedMph, 0.16) +
-      0.4275 * tempF * Math.pow(speedMph, 0.16)
-    ).toFixed(1);
-  }
+  function calculateWindChill(tempC, speedKph) {
+  return (
+    13.12 +
+    0.6215 * tempC -
+    11.37 * Math.pow(speedKph, 0.16) +
+    0.3965 * tempC * Math.pow(speedKph, 0.16)
+  ).toFixed(1);
+}
 
   // Wind chill conditions
   if (temp <= 50 && wind > 3) {
-    windchillSpan.textContent = `${calculateWindChill(temp, wind)} °F`;
+    windchillSpan.textContent = `${calculateWindChill(temp, wind)} °C`;
   } else {
     windchillSpan.textContent = "N/A";
   }
 
-  // Footer year and last modified
+  // Footer year and last  
   document.getElementById("year").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = document.lastModified;
 });

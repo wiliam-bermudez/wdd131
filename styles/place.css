@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  
   color: var(--text-dark);
   padding: 1rem;
 }
@@ -75,8 +75,6 @@ section.data, section.weather {
   max-width: 600px;
   background-color: white;
 }
-
-
 
 .mobile-icon {
   vertical-align: middle;
