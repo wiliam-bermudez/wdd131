@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  
   color: var(--text-dark);
   padding: 1rem;
 }
@@ -24,18 +24,18 @@ body {
 footer {
   text-align: center;
   background-color: var(--main-color);
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 1rem;
-  width: 10%;
+  width: 102.5%;
   margin-left: -1.25%;
 }
 
 header{
   text-align: center;
   background-color: var(--main-color);
-  color: white;
+  color: rgb(0, 0, 0);
   margin-top: -1.25%;
-  width: 100%;
+  width: 102.5%;
   margin-left: -1.25%;
   padding: 1rem;
 }
@@ -77,14 +77,20 @@ section.data, section.weather {
 }
 
 .weather h2::after {
-  content: " ⛅";
   margin-left: 0.5rem;
 }
 
 .mobile-icon {
-  display: none;
+  vertical-align: middle;
+  margin-left: 8.5rem;
+  margin-top: -6.5rem;
+  margin-bottom: -5.5rem;
 }
 
+.weather h2 {
+    margin-bottom: -0.9rem;
+
+}
 /* Desktop layout */
 @media (min-width: 768px) {
   .hero {
@@ -125,3 +131,4 @@ section.data, section.weather {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
 }
+
