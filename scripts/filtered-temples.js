@@ -74,12 +74,13 @@ const temples = [
     dedicated: "2015, December, 13",
     area: 33367,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/san-salvador-el-salvador-temple/san-salvador-el-salvador-temple-3965.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/tijuana-mexico-temple/tijuana-mexico-temple-14590-main.jpg"
   },
 
 ];
 
 const container = document.getElementById("templesContainer");
+
 
 
   function displayTemples(list) {
