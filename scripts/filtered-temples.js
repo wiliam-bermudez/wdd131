@@ -8,7 +8,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    "images/T_aba.jpg"
   },
   {
     templeName: "Manti Utah",
@@ -16,7 +16,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    "images/T_manti.jpg"
   },
   {
     templeName: "Payson Utah",
@@ -24,7 +24,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "images/T_payson.jpg"
   },
   {
     templeName: "Yigo Guam",
@@ -32,7 +32,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    "images/T_yigo.jpg"
   },
   {
     templeName: "Washington D.C.",
@@ -40,7 +40,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    "images/T_washington.jpeg"
   },
   {
     templeName: "Lima Perú",
@@ -48,7 +48,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    "images/T_lima.jpg"
   },
   {
     templeName: "Mexico City Mexico",
@@ -56,7 +56,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "images/T_cdmx.jpg"
   },
   
   {
@@ -65,7 +65,7 @@ const temples = [
     dedicated: "2011, August, 21",
     area: 27986,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/san-salvador-el-salvador-temple/san-salvador-el-salvador-temple-3965.jpg"
+    "images/T_ES.jpg"
   },
 
   {
@@ -74,7 +74,7 @@ const temples = [
     dedicated: "2015, December, 13",
     area: 33367,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/tijuana-mexico-temple/tijuana-mexico-temple-14590-main.jpg"
+    "images/T_tij.jpg"
   },
 
 ];
