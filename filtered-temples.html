@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Wiliam Bermudez">
+  <meta name="description" content="The following page will show a great gallery of 9 pictures of the temples around the world">
+  <title>Temple Album</title>
+ 
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+
+  <!-- JS -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburger" aria-label="Toggle Navigation"></button>
+    <nav id="navMenu">
+      <a href="filtered-temples.html">Home</a>
+      <a href="#" id="old">Old</a>
+      <a href="#" id="new">New</a>
+      <a href="#" id="large">Large</a>
+      <a href="#" id="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>TEMPLES OF THE CHURCH</h2>
+    
+
+
+      <div class="temples-container" id="templesContainer"></div>
+ 
+  </main>
+
+  <footer>
+ <p>&copy; <span id="currentyear"></span> 💥Wiliam Bermudez💥 CDMX, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
