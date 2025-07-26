@@ -82,21 +82,6 @@ const temples = [
 const container = document.getElementById("templesContainer");
 
 
-function createTempleCard(temple) {
-  const card = document.createElement("div");
-  card.classList.add("temple-card");
-
-  card.innerHTML = `
-    <h3>${temple.templeName}</h3>
-    <p><strong>Location:</strong> ${temple.location}</p>
-    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-    <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-  `;
-
-  return card;
-}
-
   function displayTemples(list) {
   container.innerHTML = list.map(temple => {
     return `
