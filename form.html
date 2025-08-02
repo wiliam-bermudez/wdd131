@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Wiliam Bermudez">
+  <meta name="description" content="The following page will show a great gallery of 9 pictures of the temples around the world">
+  <title>Form</title>
+
+  <link rel="stylesheet" href="styles/form.css">
+
+  <script src="scripts/form.js" defer ></script>
+</head>
+<body>
+
+        <H1>Product Review</H1>
+
+    <form action="form.html" method="get">
+
+    <label for="productName" id="tittle">Product Name:</label>
+    <select id="productName" name="productName" required>
+      <option value="" disabled selected>Select a Product ...</option>
+      
+    </select>
+    
+     <fieldset>
+      <legend>Overall Rating:</legend>
+      <label><input type="radio" name="rating" id="rating1" value="1" required /> ⭐</label>
+      <label><input type="radio" name="rating" id="rating2" value="2"/> ⭐⭐</label>
+      <label><input type="radio" name="rating" id="rating3" value="3"/> ⭐⭐⭐</label>
+      <label><input type="radio" name="rating" id="rating4" value="4"/> ⭐⭐⭐⭐</label>
+      <label><input type="radio" name="rating" id="rating5" value="5"/> ⭐⭐⭐⭐⭐</label>
+    </fieldset>
+
+    <fieldset>
+        <label for="dateInstal">Date of Installation</label>
+        <input type="date" name="dateInstal" id="dateInstal">
+    </fieldset>
+    
+    <fieldset>
+        <legend>Which features did you find useful in the product?
+            (check all that apply):</legend>
+        <label><input type="checkbox" id="feature2" name="features" value="durability" /> Durability</label>
+        <label><input type="checkbox" id="feature1" name="features"  value="easy-to-use"> Easy to use</label>
+        <label><input type="checkbox" id="feature3" name="features" value="performance" /> Performance</label>
+        <label><input type="checkbox" id="feature4" name="features" value="design" /> Design</label>
+    </fieldset>
+
+    <label for="reviewText">Written Review:</label>
+    <textarea id="reviewText" name="reviewText" rows="4" cols="40"></textarea>
+
+    <label for="userName">Your Name (Optional):</label>
+    <input type="text" id="userName" name="userName" />
+
+    
+    <input type="submit" value="Post Review" />
+  </form>
+
+  </form>
+
+
+
+  <footer>
+ <p>&copy; <span id="currentyear"></span> 💥Wiliam Bermudez💥 CDMX, Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
