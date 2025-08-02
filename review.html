@@ -22,6 +22,16 @@
     <p>You have submitted <span id="counter"></span> reviews.</p>
   </div>  
 
+
+  <script>
+
+    
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("counter").textContent = count;
+
+  </script>
   <footer>
  <p>&copy; <span id="currentyear"></span> 💥Wiliam Bermudez💥 CDMX, Mexico</p>
     <p id="lastModified"></p>
