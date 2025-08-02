@@ -104,6 +104,11 @@ input[type="submit"]:hover {
   background-color: #ddd;
 }
 
+
+#thanks {
+  text-align: center;
+}
+
 /* Footer */
 footer {
   background-color: #3c003c;
