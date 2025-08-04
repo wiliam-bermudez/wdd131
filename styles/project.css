@@ -1,0 +1,196 @@
+:root {
+  --color-bg: #EAF4F2;
+  --color-text-primary: #4A4A4A;
+  --color-text-secondary: #7A7A7A;
+  --color-accent1: #8FB9A8;
+  --color-accent2: #F4EBD0;
+  --color-btn: #A9D6E5;
+  --color-btn-hover: #76C4D2;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header {
+  background-color: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+/* CONTENT SECTION */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-accent1);
+}
+
+.text-content {
+  border: 1px solid var(--color-accent1);
+  padding: 1rem;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+}
+
+/* QUOTE SECTION */
+.quote {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* SUBSCRIBE FORM */
+.subscribe {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.subscribe form {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border: 1px solid var(--color-accent1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 350px;
+}
+
+.subscribe input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribe button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: var(--color-btn);
+  color: var(--color-text-primary);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--color-accent2);
+  color: var(--color-text-primary);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-section {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .image-placeholder {
+    width: 300px;
+    height: 200px;
+  }
+
+  .text-content {
+    max-width: 400px;
+  }
+
+  .quote blockquote {
+    font-size: 1.5rem;
+  }
+
+  .subscribe form {
+    width: 300px;
+  }
+}
