@@ -16,42 +16,49 @@
 <body>
   <header>
     <nav class="nav-bar">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
+      <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <a href="#">HOME</a>
+      <a href="practice.html">PRACTICE</a>
+      <a href="references.html">REFERENCES</a>
     </nav>
   </header>
 
   <section class="hero">
-    <img src="images/p_background.jpg" alt="Background" class="hero-bg" />
+    <img src="images/p_background.jpg" alt="Background" class="hero-bg" loading="lazy" />
     <div class="hero-content">
       <h1>Find calm in your day</h1>
     </div>
   </section>
 
-  <section class="content-section">
-    <div class="image-placeholder"></div>
+ <section class="content-section">
+    <div class="image-placeholder"><img  src="images/Content-img.jpg" alt="Meditation" loading="lazy"></div>
     <div class="text-content">
-      <h2>Section — Content #1</h2>
-      <p class="subtitle">Some additional description using secondary text color.</p>
+      <h2>THE BETTER YOU ARE, THE BETTER YOU FEEL</h2>
+      <p class="subtitle">In the world, we need to <strong>run!</strong> in order to achieve our goals. But, not always... <br><br>
+      You can take control of your life and whatever happens outside. It is okay to feel how you are feeling now. <br><br><br>
+    
+    PLEASE FEEL FREE TO INPUT YOUR EMAIL ADDRESS IN THE BOX BELOW IN ORDER TO RECEIE MEANINFUL INFORMATION EVERY WEEKEND FOR YOU.</p>
     </div>
   </section>
 
   <section class="quote">
-    <blockquote>AN INSPIRATIONAL QUOTE</blockquote>
+    <blockquote></blockquote>
   </section>
 
   <section class="subscribe">
     <form>
-      <h3>Form to Subscribe</h3>
+      <h2>Form to Subscribe</h2>
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Las Name" required />
       <input type="email" placeholder="Your email" required />
+      <label><input type="checkbox" name="Promotions" value="yes"> I want to receive offerts and announcements</label>
       <button type="submit">Subscribe</button>
     </form>
   </section>
 
   <footer>
-    <p>FOOTER</p>
+    <p>&copy; <span id="year"></span> 💥Wiliam Bermudez💥 - Mexico</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
